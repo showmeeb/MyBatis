@@ -5,7 +5,7 @@ spring:
     password: West761009
     driver-class-name:  com.mysql.cj.jdbc.Driver
 mybatis-plus:
-  mapper-locations: classpath:com/mybatis/model/mapper/*.xml
+  mapper-locations: classpath:com/mybatis/**/*.xml
   type-aliases-package: com.mybaits.model
   configuration:
     map-underscore-to-camel-case: false
