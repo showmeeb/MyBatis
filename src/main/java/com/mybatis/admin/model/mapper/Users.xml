@@ -12,6 +12,12 @@
 		FROM users 
 		WHERE id = #{userId}
 	</select>
+	
+	<select id="isUsersDataValid" resultType="Integer">
+		SELECT COUNT(*)
+		FROM users
+		WHERE account = #{account}
+	</select>
 
 	<insert id="insertUsers">
 		INSERT INTO users (account, password, name, email, status, createTime)
