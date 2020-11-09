@@ -44,7 +44,7 @@ public class UsersService {
 		}
 	}
 
-	public void updateUsers(UsersBean usersBean) {
+	public void updateUsers(UsersBean usersBean, Integer userId) {
 		if (isUsersDataExist(usersBean)) {
 			usersBean.setUpdateTime(new Timestamp(System.currentTimeMillis()));
 			usersDao.updateUsers(usersBean);
